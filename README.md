@@ -33,7 +33,7 @@
 
 1. 取``https://github.com/richardchien/coolq-http-api``下载插件dll和json，按照CQXQ指示安装。
 
-2. 拷贝ucrtbased.dll, msvcp140d.dll, libiconv.dll, sqlite3.dll等到挂载目录（不拷的话可能报LiadLibrary 126错误）。
+2. 拷贝ucrtbased.dll, msvcp140d.dll, libiconv.dll, sqlite3.dll等到挂载目录（不拷的话可能报LoadLibrary 126错误）。
 
 3. VNC内关闭先驱机器人，等待自动重启。
 
