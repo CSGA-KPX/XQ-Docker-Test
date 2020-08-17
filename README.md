@@ -1,14 +1,6 @@
 # 先驱机器人Docker化测试
 
-
-
-# 摘要
-
-本研究拟探讨先驱机器人能否Docker容器化并在*nix上运行。
-
-
-
-# 一、Docker容器化
+# 一、Docker容器化（成功）
 
 1. 替换环境
 
@@ -24,7 +16,7 @@
 
 
 
-# 二、CQXQ插件安装
+# 二、CQXQ插件安装（成功）
 
 1. 去``https://github.com/w4123/CQXQ``下载插件按教程安装。
 2. 关闭先驱机器人，等待自动重启。
@@ -32,7 +24,7 @@
 
 
 
-# 三、CQHttp安装
+# 三、CQHttp安装（成功，等待功能测试）
 
 1. 取``https://github.com/richardchien/coolq-http-api``下载插件dll和json，按照CQXQ指示安装。
 
