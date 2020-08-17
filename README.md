@@ -4,9 +4,9 @@
 
 1. 替换环境
 
-    * 新装：解压先驱机器人程序到挂载目录内
+    * 新装wine-coolq容器：run之前解压先驱机器人程序到挂载目录内。
 
-    * 已有：停止容器，删除过改名挂载目录内酷Q相关文件，然后解压放置先驱机器人程序
+    * 已有wine-coolq容器：停止容器，删除过改名挂载目录内酷Q相关文件，然后解压放置先驱机器人程序。
 
 2. ``docker run --name=coolq -d -p 8080:9000 -p 8081:10000 -v G:\docker-desktop\coolq:/home/user/coolq -e VNC_PASSWD=12345678 coolq/wine-coolq``
    * 启动容器，VNC连接，应当正常出现先驱机器人主界面，然后报ntdll.dll错误（正常现象）。
