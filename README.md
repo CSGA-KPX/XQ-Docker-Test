@@ -21,19 +21,18 @@
 # 二、CQXQ插件安装（成功）
 
 1. 去``https://github.com/w4123/CQXQ``下载插件按教程安装。
-2. 关闭先驱机器人，等待自动重启。
+2. VNC内关闭先驱机器人，等待自动重启。
 3. 检查日志中插件状态。
-
-
 
 # 三、CQHttp安装（成功）
 
-* 备注：发送消息需要XQ 0817+，base64:///图片无效
+* 备注：发送消息需要XQ 0817+，0805无法发送原因不明
+* base64:///图片无效，XQ好像不支持base64发送，[可能需要CQXQ转化base64](https://github.com/w4123/CQXQ/issues/18)
 
 1. 取``https://github.com/richardchien/coolq-http-api``下载插件dll和json，按照CQXQ指示安装。
 
-2. 拷贝ucrtbased.dll, msvcp140d.dll, libiconv.dll, sqlite3.dll等到挂载目录。
+2. 拷贝ucrtbased.dll, msvcp140d.dll, libiconv.dll, sqlite3.dll等到挂载目录（不拷的话可能报LiadLibrary 126错误）。
 
-3. 关闭先驱机器人，等待自动重启。
+3. VNC内关闭先驱机器人，等待自动重启。
 
 4. 检查日志中插件状态。
