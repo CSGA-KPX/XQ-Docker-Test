@@ -28,7 +28,7 @@
 
 1. 取``https://github.com/richardchien/coolq-http-api``下载插件dll和json，按照CQXQ指示安装。
 
-2. 拷贝.dll, .dll, .dll等到挂载目录。
+2. 拷贝ucrtbased.dll, msvcp140d.dll, libiconv.dll, sqlite3.dll等到挂载目录。
 
 3. 关闭先驱机器人，等待自动重启。
 
