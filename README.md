@@ -5,13 +5,15 @@
 1. 替换环境
 
     * 新装wine-coolq容器：run之前解压先驱机器人程序到挂载目录内。
+    
+      然后用``docker run --name=coolq -d -p 8080:9000 -p 8081:10000 -v G:\docker-desktop\coolq:/home/user/coolq -e VNC_PASSWD=12345678 coolq/wine-coolq``安装
+      
+      其中8080/9000是VNC端口，8081/10000是cqhttp端口。
 
-    * 已有wine-coolq容器：停止容器，删除过改名挂载目录内酷Q相关文件，然后解压放置先驱机器人程序。
+    * 已有wine-coolq容器：停止容器，备份插件配置文件，然后删除过改名挂载目录内酷Q相关文件，然后解压放置先驱机器人程序，恢复配置文件。
 
-2. ``docker run --name=coolq -d -p 8080:9000 -p 8081:10000 -v G:\docker-desktop\coolq:/home/user/coolq -e VNC_PASSWD=12345678 coolq/wine-coolq``
-   * 启动容器，VNC连接，应当正常出现先驱机器人主界面，然后报ntdll.dll错误（正常现象）。
-   * 其中8080/9000是VNC端口，8081/10000是cqhttp端口。
-
+2. 启动容器，VNC连接，应当正常出现先驱机器人主界面，然后报ntdll.dll错误（正常现象）。
+   
 3. ``docker exec -it coolq bash`` 进入容器shell，运行apt-get update和apt-get upgrade更新wine全家桶。
    * 如有需要，用``sed -i "s/archive.ubuntu.com/mirrors.aliyun.com/g" /etc/apt/sources.list``和``export https_proxy=http://xxx.yyy.zzz.aaa:1081/``加速更新。
 
