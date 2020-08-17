@@ -26,7 +26,9 @@
 
 
 
-# 三、CQHttp安装（成功，发送消息需要XQ 0817+，base64:///图片无效）
+# 三、CQHttp安装（成功）
+
+* 备注：发送消息需要XQ 0817+，base64:///图片无效
 
 1. 取``https://github.com/richardchien/coolq-http-api``下载插件dll和json，按照CQXQ指示安装。
 
